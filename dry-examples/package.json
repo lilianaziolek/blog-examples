@@ -1,0 +1,23 @@
+{
+  "name": "dry-examples",
+  "version": "1.0.0",
+  "description": "Examples for blog post how to avoid code duplication",
+  "author": "Lili Z",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/vuetify": "0.5.5",
+    "@nuxtjs/axios": "^5.3.6",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "nodemon": "^1.18.9"
+  }
+}
