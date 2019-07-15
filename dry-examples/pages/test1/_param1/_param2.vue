@@ -11,6 +11,7 @@
 
   export default {
     name: "test1",
+    middleware: ['localMiddleware'],
     components: {LinksComponent},
     mixins: [logRouteQueryAndParams]
   }
