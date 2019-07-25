@@ -25,6 +25,8 @@
       return {
         sampleData: 'Lorem Ipsum Data',
         links: [
+          {url: '/eventBusDemo', description: 'Event Bus Demo'},
+
           {url: '/foo', description: 'Foo With No Params'},
           {url: '/foo/x/val1', description: 'Foo X With Param1'},
           {url: '/foo/x/val2', description: 'Foo X With Param2'},
