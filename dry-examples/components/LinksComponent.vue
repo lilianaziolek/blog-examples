@@ -2,14 +2,15 @@
   <v-card>
     <v-card-text v-for="link in links" :key="link.url" class="pa-0">
       <n-link :ref="link.description" :to="link.url">{{link.description}}</n-link>
+      <hr v-if="link.putSpacer"/>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-  import {logRouteQueryAndParams} from '~/mixins/logRouteQueryAndParams.js';
+    import {logRouteQueryAndParams} from '~/mixins/logRouteQueryAndParams.js';
 
-  export default {
+    export default {
     name: "LinksComponent",
     props: ['sampleProp'],
     mixins: [logRouteQueryAndParams],
@@ -26,20 +27,21 @@
         sampleData: 'Lorem Ipsum Data',
         links: [
           {url: '/eventBusDemo', description: 'Event Bus Demo'},
+            {url: '/page-with-popup', description: 'Mobile Back Button Intercept Demo', putSpacer: true},
 
           {url: '/foo', description: 'Foo With No Params'},
           {url: '/foo/x/val1', description: 'Foo X With Param1'},
           {url: '/foo/x/val2', description: 'Foo X With Param2'},
           {url: '/foo/y/val1', description: 'Foo Y With Param1'},
-          {url: '/foo/y/val2', description: 'Foo Y With Param2'},
+            {url: '/foo/y/val2', description: 'Foo Y With Param2', putSpacer: true},
 
           {url: '/test1', description: 'Test1 With No Params'},
           {url: '/test1/val1', description: 'Test1 With Param1'},
-          {url: '/test1/val1/val2', description: 'Test1 With Param1/Param2'},
+            {url: '/test1/val1/val2', description: 'Test1 With Param1/Param2', putSpacer: true},
 
           {url: '/test2', description: 'Test2 With No Params'},
           {url: '/test2/val1', description: 'Test2 With Param1'},
-          {url: '/test2/val1/val2', description: 'Test2 With Param1/Param2'},
+            {url: '/test2/val1/val2', description: 'Test2 With Param1/Param2', putSpacer: true},
         ]
       }
     },

@@ -11,9 +11,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.5.1",
     "@nuxtjs/vuetify": "0.5.5",
-    "@nuxtjs/axios": "^5.3.6",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.8.1",
+    "nuxt-device-detect": "~1.1.5",
+    "vue": "~2.6.10"
   },
   "devDependencies": {
     "stylus": "^0.54.5",

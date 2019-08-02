@@ -42,6 +42,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-device-detect',
     '@nuxtjs/vuetify',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
